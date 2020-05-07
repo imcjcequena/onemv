@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./dm-sans-v1-latin-regular.eot');
+  src: local('DM Sans Regular'), local('DMSans-Regular'),
+    url('./dm-sans-v1-latin-regular.eot?#iefix') format('embedded-opentype'),
+    url('./dm-sans-v1-latin-regular.woff2') format('woff2'),
+    url('./dm-sans-v1-latin-regular.woff') format('woff'),
+    url('./dm-sans-v1-latin-regular.ttf') format('truetype'),
+    url('./dm-sans-v1-latin-regular.svg#DMSans') format('svg');
+}
+/* dm-sans-italic - latin */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url('./dm-sans-v1-latin-italic.eot');
+  src: local('DM Sans Italic'), local('DMSans-Italic'),
+    url('./dm-sans-v1-latin-italic.eot?#iefix') format('embedded-opentype'),
+    url('./dm-sans-v1-latin-italic.woff2') format('woff2'),
+    url('./dm-sans-v1-latin-italic.woff') format('woff'),
+    url('./dm-sans-v1-latin-italic.ttf') format('truetype'),
+    url('./dm-sans-v1-latin-italic.svg#DMSans') format('svg');
+}
+/* dm-sans-700 - latin */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./dm-sans-v1-latin-700.eot');
+  src: local('DM Sans Bold'), local('DMSans-Bold'),
+    url('./dm-sans-v1-latin-700.eot?#iefix') format('embedded-opentype'),
+    url('./dm-sans-v1-latin-700.woff2') format('woff2'),
+    url('./dm-sans-v1-latin-700.woff') format('woff'),
+    url('./dm-sans-v1-latin-700.ttf') format('truetype'),
+    url('./dm-sans-v1-latin-700.svg#DMSans') format('svg');
+}

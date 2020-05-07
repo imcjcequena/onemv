@@ -1,0 +1,82 @@
+@import './tailwind/tailwind';
+
+html {
+  font-family: 'DM Sans', sans-serif;
+}
+
+html, body {
+  margin:0; 
+  padding:0; 
+  box-sizing: border-box; 
+  text-size-adjust: none;
+  // text-size-adjust: auto;
+} 
+
+.App {
+  text-align: center;
+  background-color: #F5F5F5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  padding-top: constant(safe-area-inset-top); /* iOS 11.0 */
+  padding-top: env(safe-area-inset-top); /* iOS 11.2 */
+}
+button:focus, input:focus, select:focus, textarea:focus{
+  outline: none;
+}
+
+.sticky {
+  position: relative;
+}
+@media (min-height: 600px) {
+  .sticky {
+    position: sticky;  
+  }
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  /* CSS specific to iOS devices */ 
+}
+
+.spinner {
+  animation: rotate 2s linear infinite;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  width: 50px;
+  height: 50px;
+  
+  & .path {
+    stroke:#0A5587;
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+  }
+  
+}
+.sr-only{
+  visibility: hidden;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}

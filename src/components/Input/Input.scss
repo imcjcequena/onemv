@@ -1,0 +1,141 @@
+//Hide dropdown icon
+select::-ms-expand {
+  display: none;
+}
+//Hide arrow up and down input number
+input::-webkit-inner-spin-button, 
+input::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+select, input{
+  height: 50px;
+}
+select {
+  padding:4px;
+  margin: 0;
+  background: #fff;
+  color: #1B1C1D !important;
+  border:none;
+  outline:none;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  cursor:pointer;
+  width: 150px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+.react-datepicker-wrapper{
+  display: block;
+  width: 100%;
+  .react-datepicker__input-container{
+    display: block;
+  }
+  button{
+    background-color: transparent !important;
+  }
+}
+.selectField{
+  position: relative;
+  color: #1B1C1D !important;
+  background-image: url('../../assets/images/chevron-down.svg');
+  background-color: #FFFFFF;
+  background-size: 0.95rem;
+  background-position-x: 95%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  select {
+    background-color: transparent;
+  }
+}
+
+.datepicker{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  background-image: url('../../assets/images/ic-calendar.svg');
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  background-size: 1.25rem;
+  &::-webkit-inner-spin-button{
+    visibility: hidden;
+  }
+  &::-webkit-calendar-picker-indicator{
+    opacity: 0;
+  }
+  &::-ms-clear{
+    opacity: 0;
+  }
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #3c3c3c;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -90px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 75%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #3c3c3c transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.ms-items-center {
+  -ms-flex-align:center;
+}
+
+.bar {
+  width: 70%;
+  height: 7px;
+  background-color: #EAEAEA;
+}
+
+.bar-Weak {
+  width: 33%;
+  background-color: #F73F3F;
+  height: 7px;
+}
+
+.bar-Good {
+  width: 67%;
+  background-color: #F0A119;
+  height: 7px;
+}
+
+.bar-Strong {
+  width: 100%;
+  background-color: #1E9211;
+  height: 7px;
+}
+
+.Weak {
+  color: #F73F3F;
+}
+
+.Good {
+  color: #F0A119;
+}
+
+.Strong {
+  color: #1E9211;
+}

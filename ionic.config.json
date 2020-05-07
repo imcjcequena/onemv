@@ -1,0 +1,8 @@
+{
+  "name": "OneMV",
+  "type": "custom",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  }
+}

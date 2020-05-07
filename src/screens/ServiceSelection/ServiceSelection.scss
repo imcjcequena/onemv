@@ -1,0 +1,26 @@
+.serviceSelection {
+  background-image: url('../../assets/images/bg-mobile.png');
+  background-size: cover;
+  background-position: 55% 30%;
+  margin: auto;
+  .onemv-logo{
+    font-size: 14rem;
+    line-height: 0;
+  }
+  button{
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}
+@media (min-width: 768px){
+  .serviceSelection {
+    background-image: url('../../assets/images/bg-tablet.png');
+  }
+}
+@media (min-width: 1025px){
+  .serviceSelection {
+    background-image: url('../../assets/images/bg-desktop.png');
+  }
+}

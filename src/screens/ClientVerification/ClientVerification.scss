@@ -1,0 +1,86 @@
+.clientVerification {
+  background-color: #F5F5F5;
+  .verifyButton{
+    -webkit-box-shadow: 0 5px 15px rgba(#0A5587, 0.3);
+    -moz-box-shadow: 0 5px 15px rgba(#0A5587, 0.3);
+    -o-box-shadow: 0 5px 15px rgba(#0A5587, 0.3);
+    box-shadow: 0 5px 15px rgba(#0A5587, 0.3);
+  }
+}
+select, input{
+  height: 50px;
+}
+select {
+  padding:4px;
+  margin: 0;
+  background: #fff;
+  color: #1B1C1D !important;
+  border:none;
+  outline:none;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  cursor:pointer;
+  width: 150px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+.react-datepicker-wrapper{
+  display: block;
+  width: 100%;
+  .react-datepicker__input-container{
+    display: block;
+  }
+  button{
+    background-color: transparent !important;
+  }
+}
+.datepicker{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  background-image: url('../../assets/images/ic-calendar.svg');
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  background-size: 1.25rem;
+  &::-webkit-inner-spin-button{
+    visibility: hidden;
+  }
+  &::-webkit-calendar-picker-indicator{
+    opacity: 0;
+  }
+  &::-ms-clear{
+    opacity: 0;
+  }
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #3c3c3c;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -90px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 80%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #3c3c3c transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

@@ -1,0 +1,105 @@
+{
+  "name": "onemv-webapp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@capacitor/android": "^1.2.0",
+    "@capacitor/core": "1.2.0",
+    "@capacitor/ios": "^1.2.0",
+    "@ionic-native/core": "^5.13.0",
+    "@ionic-native/google-plus": "^5.13.0",
+    "@ionic-native/push": "^5.16.0",
+    "@ionic/react": "^4.8.0-rc.1",
+    "autoprefixer": "^9.6.1",
+    "babel-polyfill": "^6.26.0",
+    "cordova-plugin-googleplus": "git+https://github.com/EddyVerbruggen/cordova-plugin-googleplus.git",
+    "cordova-support-google-services": "^1.3.2",
+    "fancy-notifications": "^0.0.2",
+    "google-map-react": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "mobx": "^4.13.0",
+    "mobx-react": "^6.1.1",
+    "node-sass": "^4.12.0",
+    "phonegap-plugin-multidex": "^1.0.0",
+    "phonegap-plugin-push": "^2.3.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-app-polyfill": "^1.0.1",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "react-swipeable": "^5.4.0",
+    "recompose": "^0.30.0",
+    "tailwindcss": "^1.0.5"
+  },
+  "scripts": {
+    "build:css": "postcss src/styles/tailwind/tailwind.src.scss -o src/styles/tailwind/_tailwind.scss",
+    "watch:css": "postcss src/styles/tailwind/tailwind.src.scss -o src/styles/tailwind/_tailwind.scss -w",
+    "ionic:build": "react-scripts build",
+    "ionic:serve": "react-scripts start",
+    "start": "concurrently \"npm run watch:css\" \"react-scripts start\"",
+    "build": "npm run build:css && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "update:app": "npx cap update android && npx cap update ios",
+    "copy:app": "npx cap copy ios && npx cap copy android",
+    "prepare:app": "npm run build && npm run remove:www && mv build www && npm run copy:app && npm run update:app",
+    "remove:www": "rm -rf www"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      ">0.2%",
+      "not dead",
+      "not op_mini all",
+      "ie 11"
+    ]
+  },
+  "lint-staged": {
+    "linters": {
+      "*.{js}": [
+        "eslint",
+        "git add"
+      ]
+    },
+    "ignore": [
+      "**/dist/*.min.js"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "@capacitor/cli": "1.2.0",
+    "babel-eslint": "10.0.1",
+    "concurrently": "^4.1.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
+    "husky": "^2.4.0",
+    "lint-staged": "^8.2.0",
+    "postcss-cli": "^6.1.3"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-googleplus": {
+        "REVERSED_CLIENT_ID": "371215172431-9kguag1tcp59iucv3fg4c9gave4de27a.apps.googleusercontent.com"
+      },
+      "phonegap-plugin-push": {}
+    }
+  }
+}

@@ -1,0 +1,169 @@
+.onboarding-container {
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0,0,0,0.8);
+}
+
+.max-screen {
+  width: 100%;
+  max-width: 414px;
+  max-height: 736px;
+  margin: auto;
+}
+
+_:-ms-fullscreen, :root .max-bg-img { 
+  width: 100%;
+  max-width: 414px;
+  margin: auto; 
+}
+
+.center-container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.dot-2 {
+  width: 10px;
+  height: 10px;
+  opacity: 0.5;
+  background-color: #eee;
+  border-radius: 10px;
+  box-shadow: inset 1px 1px 1px #888;
+  display: inline-block;
+  margin: 5px;
+}
+
+.dot-2.active {
+  opacity: 1;
+}
+
+.onboarding-content {
+  position: absolute;
+  top: -110px;
+}
+
+.onboarding-content-state{
+  position: absolute;
+  top: -70px;
+}
+
+.onboarding-content-service{
+  position: absolute;
+  bottom: -70px;
+}
+
+.onboarding-content-tripcard {
+  position: absolute;
+  top: -150px;
+}
+
+.onboarding-content-trip-details {
+  position: absolute;
+  top: -80px;
+  left: 40%;
+}
+
+.trip-details-text {
+  max-width: 150px;
+}
+
+.onboarding-content-location {
+  position: absolute;
+  top: -90px;
+}
+
+.trip-status-img {
+  width: 350px;
+  margin: auto;
+}
+
+.onboarding-content-car {
+  position: absolute;
+  bottom: -60px;
+  left: 10px;
+}
+
+.onboarding-content-star {
+  position: absolute;
+  top: -40px;
+}
+
+.onboarding-content-comment {
+  position: absolute;
+  bottom: -70px;
+}
+
+.onboarding-content-nav {
+  position: absolute;
+  top: -120px;
+}
+
+.onboarding-content-menu {
+  position: absolute;
+  bottom: -150px;
+}
+
+.text-pickup-location {
+  margin-top: -10px;
+  margin-right: -20px;
+  width: 100px;
+}
+
+.text-car {
+  max-width: 150px;
+}
+
+.text-comment {
+  max-width: 120px;
+  margin-right: -30px;
+}
+
+.onboarding-content-hamburger {
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .max-screen {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  .max-screen {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .max-screen {
+    width: 60%;
+    font-size: 14px;
+    margin: auto;
+  }
+  .onboarding-content {
+    position: absolute;
+    top: -70px;
+  }
+  .onboarding-content-tripcard {
+    position: absolute;
+    top: -70px;
+  }
+}
+
+@media (min-width: 310px) {
+  .rate-onboarding {
+    padding-top: 50px;  
+  }
+}

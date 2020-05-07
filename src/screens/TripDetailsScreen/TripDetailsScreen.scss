@@ -1,0 +1,17 @@
+.no-footer{
+    margin-bottom: constant(safe-area-inset-bottom); /* iOS 11.0 */
+    margin-bottom: env(safe-area-inset-bottom); /* iOS 11.2 */
+}
+
+
+.background-trip-details {
+    margin: auto;
+}
+
+@media (min-height: 420px){
+    .background-trip-details {
+        max-width: calc(420px);
+        width: calc(100% + 24px);
+        margin: -10px -12px 0px -12px;
+    }
+}

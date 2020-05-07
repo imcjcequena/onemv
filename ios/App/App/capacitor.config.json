@@ -1,0 +1,15 @@
+{
+  "appId": "com.mvtransit.onemv",
+  "appName": "OneMV",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "PushNotifications": {
+      "presentationOptions": ["badge", "sound", "alert"]
+    },
+    "LocalNotifications": {
+      "smallIcon": "ic_notification"
+    }
+  }
+}

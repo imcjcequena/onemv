@@ -1,0 +1,217 @@
+@font-face {
+  font-family: 'mv-icons';
+  src:  url('fonts/mv-icons.eot?drlcdv');
+  src:  url('fonts/mv-icons.eot?drlcdv#iefix') format('embedded-opentype'),
+    url('fonts/mv-icons.ttf?drlcdv') format('truetype'),
+    url('fonts/mv-icons.woff?drlcdv') format('woff'),
+    url('fonts/mv-icons.svg?drlcdv#mv-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'mv-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-my-trips:before {
+  content: "\e90e";
+}
+.icon-mv-logo:before {
+  content: "\e932";
+}
+.icon-sad-face:before {
+  content: "\e933";
+}
+.icon-vehicle-pin:before {
+  content: "\e90b";
+}
+.icon-confirmation-number:before {
+  content: "\e904";
+}
+.icon-account:before {
+  content: "\e900";
+}
+.icon-calendar:before {
+  content: "\e901";
+}
+.icon-cane:before {
+  content: "\e902";
+}
+.icon-profile:before {
+  content: "\e903";
+}
+.icon-crutches:before {
+  content: "\e905";
+}
+.icon-cutaway:before {
+  content: "\e906";
+}
+.icon-lift:before {
+  content: "\e907";
+}
+.icon-location-pin:before {
+  content: "\e908";
+}
+.icon-map-circle-pin .path1:before {
+  content: "\e909";
+}
+.icon-map-circle-pin .path2:before {
+  content: "\e90a";
+  margin-left: -1em;
+}
+.icon-mobility-aid:before {
+  content: "\e930";
+}
+.icon-mobility-scooter:before {
+  content: "\e90c";
+}
+.icon-mv-home:before {
+  content: "\e90d";
+}
+.icon-news:before {
+  content: "\e90f";
+}
+.icon-onemv-logo:before {
+  content: "\e910";
+}
+.icon-oxygen:before {
+  content: "\e911";
+}
+.icon-passenger:before {
+  content: "\e912";
+}
+.icon-pca:before {
+  content: "\e913";
+}
+.icon-policy:before {
+  content: "\e914";
+}
+.icon-service-animal:before {
+  content: "\e915";
+}
+.icon-succees:before {
+  content: "\e916";
+}
+.icon-support:before {
+  content: "\e917";
+}
+.icon-unregister:before {
+  content: "\e918";
+}
+.icon-walker:before {
+  content: "\e919";
+}
+.icon-ic-xl-wheelchair:before {
+  content: "\e91a";
+}
+.icon-warning:before {
+  content: "\e91b";
+}
+.icon-call:before {
+  content: "\e91d";
+}
+.icon-mail:before {
+  content: "\e91e";
+}
+.icon-close:before {
+  content: "\e91f";
+}
+.icon-message:before {
+  content: "\e920";
+}
+.icon-chevron-down:before {
+  content: "\e921";
+}
+.icon-chevron-left:before {
+  content: "\e922";
+}
+.icon-chevron-right:before {
+  content: "\e923";
+}
+.icon-chevron-up:before {
+  content: "\e924";
+}
+.icon-circle:before {
+  content: "\e925";
+}
+.icon-menu:before {
+  content: "\e926";
+}
+.icon-visibility-on:before {
+  content: "\e92f";
+}
+.icon-error:before {
+  content: "\e927";
+}
+.icon-check:before {
+  content: "\e928";
+}
+.icon-arrow-back:before {
+  content: "\e929";
+}
+.icon-arrow-forward:before {
+  content: "\e92a";
+}
+.icon-star:before {
+  content: "\e92b";
+}
+.icon-check-circle:before {
+  content: "\e92c";
+}
+.icon-sign-out:before {
+  content: "\e92d";
+}
+.icon-help:before {
+  content: "\e91c";
+}
+.icon-settings:before {
+  content: "\e92e";
+}
+.icon-visibility-off:before {
+  content: "\e931";
+}
+.icon-google:before {
+  content: "\ea88";
+}
+.icon-google-square:before {
+  content: "\ea89";
+}
+.icon-google-circle:before {
+  content: "\ea8a";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-facebook-square:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+.icon-telegram:before {
+  content: "\ea95";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-linkedin-square:before {
+  content: "\eac9";
+}
+.icon-linkedin:before {
+  content: "\eaca";
+}

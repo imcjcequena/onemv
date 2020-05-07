@@ -1,0 +1,120 @@
+.button-shadow {
+  -webkit-box-shadow: 0 5px 15px rgba(#0A5587, 0.3);
+  -moz-box-shadow: 0 5px 15px rgba(#0A5587, 0.3);
+  -o-box-shadow: 0 5px 15px rgba(#0A5587, 0.3);
+  box-shadow: 0 5px 15px rgba(#0A5587, 0.3);
+}
+.border-bottom {
+  border-bottom: 1px solid #9A9A9A;
+
+}
+.comments{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.comments-input{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 100%;
+      
+}
+.star {
+  position: relative;
+  
+  display: inline-block;
+  width: 0;
+  height: 0;
+  
+  margin-left: 1.2em;
+  margin-right: 1.2em;
+  margin-bottom: 1.2em;
+  
+  border-right:  .3em solid transparent;
+  border-bottom: .7em  solid #a5a5a5;
+  border-left:   .3em solid transparent;
+
+  /* Controlls the size of the stars. */
+  font-size: 18px;
+  
+  &:before, &:after {
+    content: '';
+    
+    display: block;
+    width: 0;
+    height: 0;
+    
+    position: absolute;
+    top: .6em;
+    left: -1em;
+  
+    border-right:  1em solid transparent;
+    border-bottom: .7em  solid #a5a5a5;
+    border-left:   1em solid transparent;
+  
+    transform: rotate(-35deg);
+  }
+  
+  &:after {  
+    transform: rotate(35deg);
+  }
+}
+.star.active{
+  border-bottom: .7em  solid #ffba00;
+  &:before, &:after {
+    border-bottom: .7em  solid #ffba00;
+  }
+}
+#cross {
+  background: white;
+  height: 25px;
+  position: relative;
+  width: 5px;
+  transform: rotate(45deg) scale(0.8, 0.8) translate(10px, -10px);
+}
+#cross:after {
+  background: white;
+  content: "";
+  height: 5px;
+  left: -10px;
+  position: absolute;
+  top: 10px;
+  width: 25px;
+}
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 25% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

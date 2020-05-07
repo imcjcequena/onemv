@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "412086495612",
+    "firebase_url": "https://onemv-f33df.firebaseio.com",
+    "project_id": "onemv-f33df",
+    "storage_bucket": "onemv-f33df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412086495612:android:9b54684e13fe8f15c7dcf9",
+        "android_client_info": {
+          "package_name": "com.mvtransit.onemv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "412086495612-l6d5n6k9ftn7dcl31vjnqrhp9ggljnpd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7VB7l2p3vQtWhazs9ELHQ_yqCqokgAzU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "412086495612-l6d5n6k9ftn7dcl31vjnqrhp9ggljnpd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

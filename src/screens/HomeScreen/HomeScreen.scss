@@ -1,0 +1,57 @@
+.schedule-container, .my-trips {
+  line-height: 0;
+  font-size: 16px;
+  text-align: left;
+}
+.tripLabel {
+  height: 24px;
+}
+.tripSchedule {
+  padding-bottom: 7px;
+}
+.endpoints {
+  text-align: left;
+  padding-top: 11px;
+  .leading-none {
+    line-height: 0px;  
+  }
+  .circle {
+    border-radius: 50%;
+    background: #0A5587;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-left: 2px;
+  }
+  .dot {
+    width: 16px;
+    height: 16px;
+    letter-spacing: 8px;
+    color: #0A5587;
+    text-align: center;
+    line-height: 12px;
+    margin-left: 6px;
+  }
+  .drop {
+    color: #EC6161;
+  }
+}
+hr {
+  border-width: 1px;
+}
+.left {
+  flex-grow: 1;
+  line-height: 20px;
+}
+.right {
+  margin-left: auto;
+  text-align: right;
+  line-height: 20px;
+  .status {
+    color: #0A5587;
+  }
+}
+.homeContainer{
+  height: calc(80vh - 156px);
+  overflow-y: scroll;
+}

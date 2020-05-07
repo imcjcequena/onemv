@@ -1,0 +1,11 @@
+footer{
+  background-color: #0A5587;
+  position: relative;
+  margin-bottom: constant(safe-area-inset-bottom); /* iOS 11.0 */
+  margin-bottom: env(safe-area-inset-bottom); /* iOS 11.2 */
+}
+@media (min-height: 600px){
+  footer {
+    position: sticky;
+  }
+}

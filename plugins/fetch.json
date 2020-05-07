@@ -1,0 +1,20 @@
+{
+  "cordova-plugin-googleplus": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/EddyVerbruggen/cordova-plugin-googleplus"
+    },
+    "is_top_level": true,
+    "variables": {
+      "REVERSED_CLIENT_ID": "371215172431-9kguag1tcp59iucv3fg4c9gave4de27a.apps.googleusercontent.com"
+    }
+  },
+  "phonegap-plugin-push": {
+    "source": {
+      "type": "registry",
+      "id": "phonegap-plugin-push@2.3.0"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}
